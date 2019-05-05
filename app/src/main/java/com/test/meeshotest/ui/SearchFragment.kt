@@ -86,7 +86,11 @@ class SearchFragment : BaseFragment(), SearchView {
 
     override fun onPullRequestsResponse(pullResuests: List<PullRequest>?) {
         pullResuests?.apply {
-            listener.onResponse(this)
-        } ?: showToast(getString(R.string.something_went_worng))
+            if (this.isNotEmpty()) {
+                listener.onResponse(this)
+            } else {
+                showToast(getString(R.string.something_went_worng))
+            }
+        }
     }
 }
