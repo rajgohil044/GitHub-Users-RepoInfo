@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MeeshoTest</string>
+    <string name="enter_username">Enter user name</string>
+    <string name="enter_reponame">Enter repo name</string>
+    <string name="search">search</string>
+    <string name="alert">Please enter all the fields!</string>
+    <string name="something_went_worng">Something went wrong! Please try again.</string>
+</resources>
